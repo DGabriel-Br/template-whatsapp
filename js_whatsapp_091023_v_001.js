@@ -53,7 +53,7 @@ const userAvatar = botBody.querySelector('img[elementtiming="Bot avatar"]');
 const status = varStatus;
 
 const audioNot = document.createElement('audio');
-audioNot.src = 'http://grupoheranca.com.br/wp-content/uploads/2024/08/audio_whatsapp.mp3';
+audioNot.src = 'https://igorlemoes.com.br/files/whatsapp/audio_whatsapp.mp3';
 let mensagesLength = 0;
 
 setInterval(() => {
@@ -101,7 +101,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://raw.githubusercontent.com/DGabriel-Br/template-whatsapp/main/style_whatsapp_091020_v_001.css';
+    link.href = 'https://igorlemoes.com.br/files/whatsapp/style_whatsapp_091020_v_001.css';
     link.media = 'all';
     head.appendChild(link);
 }
