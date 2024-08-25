@@ -215,3 +215,11 @@ margin: 0 30px 0 0;
   font-weight: 400;
   letter-spacing: 0;
 }
+
+  /* Input */
+.typebot-input {
+    max-width: 350px;
+    border: 1px solid #e3e3e3
+    backgroud-color: #ffffff
+    border-radius: 35px
+}
