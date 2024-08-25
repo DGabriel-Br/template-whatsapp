@@ -1,3 +1,4 @@
+//////////// JavaScript 1.0 ////////////
 function criarBarra(var_nome, var_avatar) {
   // Verificar se a barra já foi criada
   if (document.querySelector('.user-bar')) return;
