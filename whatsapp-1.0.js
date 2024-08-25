@@ -107,7 +107,7 @@ function criarBarra(var_nome, var_avatar) {
     link.id = 'myCss';
     link.rel = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://cdn.jsdelivr.net/gh/DGabriel-Br/template-whatsapp@main/whatsapp-1.0.css';
+    link.href = 'https://cdn.jsdelivr.net/gh/DGabriel-Br/template-whatsapp@main/whatsapp-1.1.css';
     link.media = 'all';
     elementoPai.appendChild(link);
   }
