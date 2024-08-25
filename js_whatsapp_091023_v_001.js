@@ -101,7 +101,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://raw.githubusercontent.com/DGabriel-Br/template-whatsapp/main/style_whatsapp_091020_v_001.css';
+    link.href = 'https://cdn.jsdelivr.net/gh/DGabriel-Br/template-whatsapp@main/style_whatsapp_091020_v_001.css';
     link.media = 'all';
     head.appendChild(link);
 }
