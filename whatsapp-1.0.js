@@ -53,7 +53,7 @@ const userAvatar = botBody.querySelector('img[elementtiming="Bot avatar"]');
 const status = varStatus;
 
 const audioNot = document.createElement('audio');
-audioNot.src = 'https://igorlemoes.com.br/files/whatsapp/audio_whatsapp.mp3';
+audioNot.src = 'https://cdn.jsdelivr.net/gh/DGabriel-Br/template-whatsapp@main/audio_whatsapp.mp3';
 let mensagesLength = 0;
 
 setInterval(() => {
