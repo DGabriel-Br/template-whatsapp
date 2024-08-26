@@ -1,4 +1,3 @@
-//////////// JavaScript 1.0 ////////////
 function criarBarra(var_nome, var_avatar) {
   var varStatus = document.createElement("span");
   varStatus.className = "status";
@@ -9,9 +8,9 @@ function criarBarra(var_nome, var_avatar) {
 
   var backButton = document.createElement("div");
   backButton.className = "back";
-  backButton.innerHTML = <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+  backButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-short" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"/>
-</svg>;
+</svg>`;
 
   var avatar = document.createElement("div");
   avatar.className = "avatar";
@@ -29,15 +28,15 @@ function criarBarra(var_nome, var_avatar) {
 
   var attachmentAction = document.createElement("div");
   attachmentAction.className = "actions cam-action";
-  attachmentAction.innerHTML = <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
+  attachmentAction.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-camera-video-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2V5z"/>
-</svg>;
+</svg>`;
 
   var phoneAction = document.createElement("div"); // Alterado para um elemento de link <a>
   phoneAction.className = "actions phone-action";
-  phoneAction.innerHTML = <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+  phoneAction.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-</svg>;
+</svg>`;
 
   userBar.appendChild(backButton);
   userBar.appendChild(avatar);
@@ -54,7 +53,7 @@ const userAvatar = botBody.querySelector('img[elementtiming="Bot avatar"]');
 const status = varStatus;
 
 const audioNot = document.createElement('audio');
-audioNot.src = 'https://cdn.jsdelivr.net/gh/DGabriel-Br/template-whatsapp@main/audio_whatsapp.mp3';
+audioNot.src = 'https://igorlemoes.com.br/files/whatsapp/audio_whatsapp.mp3';
 let mensagesLength = 0;
 
 setInterval(() => {
@@ -75,12 +74,12 @@ if(allMessages.length > mensagesLength) {
   if(!isTyping) {
     for (let i = mensagesLength; i < allMessages.length; i++) {
       const iconContainer = document.createElement('div');
-      const checkIcon = <svg id="checkIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.626 24.684" style="position: absolute; bottom: 0; right: 5px; z-index: 99" height="20" width="18">
+      const checkIcon = `<svg id="checkIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.626 24.684" style="position: absolute; bottom: 0; right: 5px; z-index: 99" height="20" width="18">
         <g id="Grupo_1" data-name="Grupo 1" transform="translate(-708.9 -601.383)">
           <path id="Caminho_6" data-name="Caminho 6" d="M728.035,623.468l1.382,1.482,17.929-20.334" transform="translate(-1.937 -1.117)" fill="none" stroke="#07c654" stroke-linecap="round" stroke-width="3"></path>
           <path id="Caminho_7" data-name="Caminho 7" d="M712.017,616.07l7.088,8.039,17.757-20.14" transform="translate(-1 -0.469)" fill="none" stroke="#07c654" stroke-linecap="round" stroke-width="3"></path>
         </g>
-      </svg>;
+      </svg>`;
       iconContainer.innerHTML = checkIcon;
       
       const currentMsg = allMessages[i];
@@ -102,7 +101,7 @@ if (!document.getElementById(cssId))
     link.id   = cssId;
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://cdn.jsdelivr.net/gh/DGabriel-Br/template-whatsapp@main/2.css';
+    link.href = 'https://igorlemoes.com.br/files/whatsapp/style_whatsapp_091020_v_001.css';
     link.media = 'all';
     head.appendChild(link);
 }
